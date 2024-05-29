@@ -33,6 +33,16 @@ body {
     box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
 }
+
+h2.titulo {
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00ff08;
+}
+
 /*  ESTILO GERAL FIM*/
 /* ESTILO MENU */
 
@@ -116,3 +126,59 @@ section.topo-do-site {
     }
 
 }
+/* ESTILO TOPO DO SITE Fim*/
+
+/* ESTILO DAS ESPECIALIDADES */
+.especialidades {
+    padding: 40px 4%;
+}
+.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    font-family: "Poppins", sans-serif;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #777272;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: #00ff08;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILO DAS ESPECIALIDADES FIM*/
+
+/* ESTILO DO SOBRE*/
+
+section.sobre{
+    padding: 40px 4%;
+    font-family: "Poppins", sans-serif;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 25px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00ff08;
+}
+
+/* ESTILO DO SOBRE FIM*/
