@@ -29,7 +29,7 @@ body {
     transition: .2s;
 }
 
-.btn-contato button:hover{
+button:hover{
     box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
 }
@@ -37,6 +37,7 @@ body {
 h2.titulo {
     font-size: 38px;
     text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 
 h2.titulo span {
@@ -171,6 +172,10 @@ section.sobre{
 .sobre .txt-sobre h2{
     font-size: 40px;
 }
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
 
 section.sobre .flex{
     align-items: center;
@@ -181,4 +186,148 @@ section.sobre .flex{
     color: #00ff08;
 }
 
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #00ff08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
 /* ESTILO DO SOBRE FIM*/
+
+/* ESTILO DO PORTFOLIO */
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #00ff08;
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin: 70px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+/* ESTILO DO PORTFOLIO FIM*/
+
+/* ESTILO DO FORMULARIO*/
+
+section.formulario{
+    padding: 80px 4%;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #00ff0848;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+
+}
+
+form textarea{
+    resize: none;
+    height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #00ff08;
+    font-weight: 700;
+    cursor: pointer;
+    color: #292626;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+/* ESTILO DO FORMULARIO FIM*/
+/* ESTILO DO foot FIM*/
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #00ff08;
+
+}
+footer .flex{
+    justify-content: space-between
+}
+
+footer .line-footer {
+    padding: 20px 0;
+    border-bottom: 2px solid #00ff08;
+}
+
+footer .line-footerr {
+    padding: 20px 0;
+}
+
+
+footer .line-footerr p i{
+    color: #00ff08;
+    font-size: 22px;
+}
+
+footer .line-footerr p a {
+    text-decoration: none;
+}
+/* ESTILO DO foot FIM*/
+
+@media screen and (max-width:1020px){
+    .flex{
+        flex-direction: column;
+    }
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    .Menu_principal, .btn-contato{
+        display: none;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+}
